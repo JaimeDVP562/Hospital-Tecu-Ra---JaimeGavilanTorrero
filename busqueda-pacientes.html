@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Tecu-ra - Búsqueda de Pacientes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Logo Hospital Tecu-ra">
+        <h1>Búsqueda de Pacientes</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="citas.html">Lista de Citas</a></li>
+            <li><a href="detalle-cita.html">Detalle Cita</a></li>
+            <li><a href="historia-clinica.html">Historia Clínica</a></li>
+            <li><a href="busqueda-pacientes.html">Búsqueda de Pacientes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Buscar Paciente (Sin Cita)</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido"><br><br>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni"><br><br>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Resultados de Búsqueda</h2>
+            <table border="1" style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>DNI</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123</td>
+                        <td>Ana</td>
+                        <td>Gómez</td>
+                        <td>12345678</td>
+                        <td><a href="historia-clinica.html?id=123" class="btn">Ver Historia</a></td>
+                    </tr>
+                    <!-- Más resultados -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hospital Tecu-ra. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

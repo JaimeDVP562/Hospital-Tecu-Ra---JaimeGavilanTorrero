@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Tecu-ra - Lista de Citas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Logo Hospital Tecu-ra">
+        <h1>Lista de Citas</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="citas.html">Lista de Citas</a></li>
+            <li><a href="detalle-cita.html">Detalle Cita</a></li>
+            <li><a href="historia-clinica.html">Historia Clínica</a></li>
+            <li><a href="busqueda-pacientes.html">Búsqueda de Pacientes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Citas Programadas</h2>
+            <table border="1" style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th>ID Cita</th>
+                        <th>Paciente</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Médico</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Juan Pérez</td>
+                        <td>2025-11-20</td>
+                        <td>10:00</td>
+                        <td>Dr. García</td>
+                        <td><a href="detalle-cita.html?id=001" class="btn">Ver Detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>María López</td>
+                        <td>2025-11-21</td>
+                        <td>11:30</td>
+                        <td>Dra. Rodríguez</td>
+                        <td><a href="detalle-cita.html?id=002" class="btn">Ver Detalle</a></td>
+                    </tr>
+                    <!-- Más filas de ejemplo -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hospital Tecu-ra. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
