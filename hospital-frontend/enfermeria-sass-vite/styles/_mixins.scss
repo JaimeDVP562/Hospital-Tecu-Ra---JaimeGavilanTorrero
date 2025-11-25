@@ -1,0 +1,31 @@
+@use '_variables' as v;
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin button($bg: v.$color-secondary, $color: v.$color-white) {
+	background-color: $bg;
+	color: $color;
+	border: none;
+	padding: 0.5rem 1.2rem;
+	border-radius: v.$border-radius;
+	cursor: pointer;
+	font-size: v.$font-size-base;
+	transition: background 0.2s;
+	&:hover {
+		background-color: darken($bg, 10%);
+	}
+}
+
+@mixin respond-to($breakpoint) {
+	@if $breakpoint == 'sm' {
+		@media (max-width: 600px) { @content; }
+	} @else if $breakpoint == 'md' {
+		@media (max-width: 900px) { @content; }
+	} @else if $breakpoint == 'lg' {
+		@media (max-width: 1200px) { @content; }
+	}
+}

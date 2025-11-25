@@ -1,0 +1,61 @@
+@use '_variables' as v;
+@use '_mixins' as mixins;
+
+section {
+	margin-bottom: 20px;
+	background: v.$color-white;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+	color: v.$color-secondary;
+}
+
+button, .btn {
+	background-color: v.$color-secondary;
+	color: v.$color-white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+button:hover, .btn:hover {
+	background-color: #0056b3;
+}
+.btn {
+	@include mixins.button;
+	margin: 0.5rem 0;
+}
+
+.card {
+	background: v.$color-white;
+	border-radius: v.$border-radius;
+	box-shadow: 0 2px 8px rgba(v.$color-text, 0.08);
+	padding: v.$spacing;
+	margin-bottom: v.$spacing;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+input, select, textarea {
+	padding: 0.5rem;
+	border: 1px solid v.$color-secondary;
+	border-radius: v.$border-radius;
+	font-size: v.$font-size-base;
+}
+
+input:focus, select:focus, textarea:focus {
+	outline: none;
+	border-color: v.$color-primary;
+}

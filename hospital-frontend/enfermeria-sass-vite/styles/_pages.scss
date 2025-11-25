@@ -1,0 +1,23 @@
+@use '_variables' as v;
+@use '_mixins' as mixins;
+.page--login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh;
+}
+
+.login-container {
+	background: v.$color-white;
+	border-radius: v.$border-radius;
+	box-shadow: 0 2px 12px rgba(v.$color-text, 0.12);
+	padding: 2rem;
+	max-width: 350px;
+	width: 100%;
+	text-align: center;
+}
+
+.page--dashboard {
+	padding: 2rem;
+}
