@@ -1,16 +1,15 @@
-@use './variables' as variables;
-@use './mixins' as mixins;
+/* Layout styles converted to plain CSS using CSS variables and helper classes */
 body {
-	font-family: variables.$font-main;
+	font-family: var(--font-main);
 	margin: 0;
 	padding: 0;
-	background-color: variables.$color-bg;
-	color: variables.$color-text;
+	background-color: var(--color-bg);
+	color: var(--color-text);
 }
 
 header {
-	background-color: variables.$color-primary;
-	color: variables.$color-white;
+	background-color: var(--color-primary);
+	color: var(--color-white);
 	padding: 5px;
 	text-align: center;
 	display: flex;
@@ -35,8 +34,8 @@ header .header-content {
 
 header a.btn {
 	margin-left: auto;
-	background-color: variables.$color-accent;
-	color: variables.$color-white;
+	background-color: var(--color-accent);
+	color: var(--color-white);
 	padding: 10px 20px;
 	text-decoration: none;
 	border-radius: 5px;
@@ -44,7 +43,7 @@ header a.btn {
 }
 
 nav {
-	background-color: variables.$color-footer;
+	background-color: var(--color-footer);
 	padding: 10px;
 }
 
@@ -61,7 +60,7 @@ nav li {
 }
 
 nav a {
-	color: variables.$color-white;
+	color: var(--color-white);
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -76,22 +75,12 @@ main {
 	margin: 0 auto;
 }
 
-header {
-	background-color: variables.$color-primary;
-	color: variables.$color-white;
-	padding: variables.$spacing;
-	@include mixins.flex-center;
-}
-
-main {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: variables.$spacing;
-}
+/* utility: center header contents */
+header.center { display:flex; align-items:center; justify-content:center; }
 
 footer {
-	background-color: variables.$color-footer;
-	color: variables.$color-white;
+	background-color: var(--color-footer);
+	color: var(--color-white);
 	text-align: center;
 	padding: 0.5rem;
 	position: fixed;

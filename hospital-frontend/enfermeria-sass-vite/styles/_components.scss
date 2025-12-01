@@ -1,21 +1,21 @@
-@use '_variables' as v;
-@use '_mixins' as mixins;
+@use './variables' as variables;
+@use './mixins' as mixins;
 
 section {
 	margin-bottom: 20px;
-	background: v.$color-white;
+	background: variables.$color-white;
 	padding: 15px;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1, h2 {
-	color: v.$color-secondary;
+	color: variables.$color-secondary;
 }
 
 button, .btn {
-	background-color: v.$color-secondary;
-	color: v.$color-white;
+	background-color: variables.$color-secondary;
+	color: variables.$color-white;
 	border: none;
 	padding: 10px 20px;
 	cursor: pointer;
@@ -33,11 +33,11 @@ button:hover, .btn:hover {
 }
 
 .card {
-	background: v.$color-white;
-	border-radius: v.$border-radius;
-	box-shadow: 0 2px 8px rgba(v.$color-text, 0.08);
-	padding: v.$spacing;
-	margin-bottom: v.$spacing;
+	background: variables.$color-white;
+	border-radius: variables.$border-radius;
+	box-shadow: 0 2px 8px rgba(variables.$color-text, 0.08);
+	padding: variables.$spacing;
+	margin-bottom: variables.$spacing;
 }
 
 form {
@@ -50,12 +50,12 @@ form {
 
 input, select, textarea {
 	padding: 0.5rem;
-	border: 1px solid v.$color-secondary;
-	border-radius: v.$border-radius;
-	font-size: v.$font-size-base;
+	border: 1px solid variables.$color-secondary;
+	border-radius: variables.$border-radius;
+	font-size: variables.$font-size-base;
 }
 
 input:focus, select:focus, textarea:focus {
 	outline: none;
-	border-color: v.$color-primary;
+	border-color: variables.$color-primary;
 }

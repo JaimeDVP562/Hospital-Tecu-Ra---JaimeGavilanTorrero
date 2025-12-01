@@ -1,152 +1,28 @@
-/* Basic styles for Hospital Tecu-ra */
+/* Combined stylesheet for the static site
+   This file brings together variables, helpers, layout, components and pages
+   so the HTML files can include a single CSS file: css/styles.css
+*/
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+@charset "utf-8";
 
-header {
-    background-color: #515b94;
-    color: white;
-    padding: 5px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
+/* Variables */
+@import url('./_variables.css');
 
-header img {
-    height: 80px;
-}
-header .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-}
-header a.btn{
-    margin-left: auto;
-    background-color: #ff4b5c;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    justify-content: end;
-}
+/* Mixins helpers as classes */
+@import url('./_mixins.css');
 
-nav {
-    background-color: #333;
-    padding: 10px;
-}
+/* Layout */
+@import url('./_layout.css');
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
+/* Components */
+@import url('./_components.css');
 
-nav li {
-    margin: 0 15px;
-}
+/* Page specific */
+@import url('./_pages.css');
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+/* Additional base styles (normalize + small helpers) */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 20px;
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1, h2 {
-    color: #007bff;
-}
-
-button, .btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-button:hover, .btn:hover {
-    background-color: #0056b3;
-}
-
-footer {
-    text-align: center;
-    padding: 5px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Login Page Styles */
-.login-container {
-    max-width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.login-logo {
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-input[type="text"]:focus, input[type="password"]:focus {
-    border-color: #007bff;
-    outline: none;
-}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+.visually-hidden { position: absolute; left: -9999px; }

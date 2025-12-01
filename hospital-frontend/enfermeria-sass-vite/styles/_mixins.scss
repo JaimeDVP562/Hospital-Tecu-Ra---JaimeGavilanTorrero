@@ -1,4 +1,4 @@
-@use '_variables' as v;
+@use './variables' as variables;
 
 @mixin flex-center {
 	display: flex;
@@ -6,14 +6,14 @@
 	align-items: center;
 }
 
-@mixin button($bg: v.$color-secondary, $color: v.$color-white) {
+@mixin button($bg: variables.$color-secondary, $color: variables.$color-white) {
 	background-color: $bg;
 	color: $color;
 	border: none;
 	padding: 0.5rem 1.2rem;
-	border-radius: v.$border-radius;
+	border-radius: variables.$border-radius;
 	cursor: pointer;
-	font-size: v.$font-size-base;
+	font-size: variables.$font-size-base;
 	transition: background 0.2s;
 	&:hover {
 		background-color: darken($bg, 10%);
