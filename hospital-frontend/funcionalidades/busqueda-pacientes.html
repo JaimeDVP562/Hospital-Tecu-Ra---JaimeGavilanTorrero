@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hospital Tecu-ra - Búsqueda de Pacientes</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Búsqueda de Pacientes - Hospital Tecu-ra</title>
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
         <header>
-
             <div class="header-content">
                 <img src="../images/logo.svg" alt="Logo Hospital Tecu-ra">
-                <h1>Bienvenido al Hospital Tecu-ra</h1>
+                <h1>Búsqueda de Pacientes</h1>
             </div>
-            <a href="../login.html" class="btn">Salir</a>
+            <a href="../index.html" class="btn">Salir</a>
         </header>
+
         <nav>
             <ul>
                 <li><a href="../home.html">Inicio</a></li>
+                <li><a href="guia-estilos.html">Guía de Estilos</a></li>
                 <li><a href="citas.html">Lista de Citas</a></li>
                 <li><a href="detalle-cita.html">Detalle Cita</a></li>
                 <li><a href="historia-clinica.html">Historia Clínica</a></li>
                 <li><a href="busqueda-pacientes.html">Búsqueda de Pacientes</a></li>
+                <li><a href="../enfermeria-sass-vite/dist/index.html">Módulo Enfermería</a></li>
+                <li><a href="../urgencias-tailwind-vite/dist/index.html">Módulo Urgencias</a></li>
             </ul>
         </nav>
+
         <main>
             <section>
                 <h2>Buscar Paciente (Sin Cita)</h2>
                 <form>
                     <label for="dni">DNI:</label>
-                    <input type="text" id="dni" name="dni"><br><br>
+                    <input type="text" id="dni" name="dni">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre"><br><br>
+                    <input type="text" id="nombre" name="nombre">
                     <label for="apellido1">Primer Apellido:</label>
-                    <input type="text" id="apellido1" name="apellido1"><br><br>
+                    <input type="text" id="apellido1" name="apellido1">
                     <label for="apellido2">Segundo Apellido:</label>
-                    <input type="text" id="apellido2" name="apellido2"><br><br>
-                    <button type="submit">Buscar</button>
+                    <input type="text" id="apellido2" name="apellido2">
+                    <div style="margin-top:0.75rem;"><button type="submit" class="btn">Buscar</button></div>
                 </form>
             </section>
+
             <section>
                 <h2>Resultados de Búsqueda</h2>
-                <table border="1"
-                    style="width: 100%; border-collapse: collapse;">
+                <table class="table-results" style="width:100%; border-collapse:collapse;">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -58,30 +62,27 @@
                             <td>Ana</td>
                             <td>Gómez</td>
                             <td>12345677</td>
-                            <td><a href="historia-clinica.html?id=123"
-                                    class="btn">Ver Historia</a></td>
+                            <td><a href="historia-clinica.html?id=123" class="btn">Ver Historia</a></td>
                         </tr>
-                                                <tr>
-                            <td>123</td>
+                        <tr>
+                            <td>124</td>
                             <td>Anita</td>
                             <td>Gómez</td>
                             <td>12345678</td>
-                            <td><a href="historia-clinica.html?id=123"
-                                    class="btn">Ver Historia</a></td>
+                            <td><a href="historia-clinica.html?id=124" class="btn">Ver Historia</a></td>
                         </tr>
-                                                <tr>
-                            <td>123</td>
+                        <tr>
+                            <td>125</td>
                             <td>Ana María</td>
                             <td>Gómez</td>
                             <td>12345679</td>
-                            <td><a href="historia-clinica.html?id=123"
-                                    class="btn">Ver Historia</a></td>
+                            <td><a href="historia-clinica.html?id=125" class="btn">Ver Historia</a></td>
                         </tr>
-                        <!-- Más resultados -->
                     </tbody>
                 </table>
             </section>
         </main>
+
         <footer>
             <p>&copy; 2025 Hospital Tecu-ra. Todos los derechos reservados.</p>
         </footer>

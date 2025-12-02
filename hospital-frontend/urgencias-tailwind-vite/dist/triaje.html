@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triaje en Urgencias</title>
+    <link rel="stylesheet" crossorigin href="./assets/styles-Dl4iXCeZ.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img class="header-logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPCEtLSBNZWRpY2FsIENyb3NzIC0tPg0KICA8cmVjdCB4PSIxMCIgeT0iMzAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzAwN2JmZiIvPg0KICA8cmVjdCB4PSIwIiB5PSI0MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMDA3YmZmIi8+DQogIA0KICA8IS0tIEhvc3BpdGFsIE5hbWUgLS0+DQogIDx0ZXh0IHg9IjYwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzMzMyI+VGVjdS1yYTwvdGV4dD4NCiAgDQogIDwhLS0gU3VidGl0bGUgLS0+DQogIDx0ZXh0IHg9IjYwIiB5PSI3MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjY2Ij5Ib3NwaXRhbDwvdGV4dD4NCjwvc3ZnPg==" alt="Logo">
+        <h1>Triaje en Urgencias</h1>
+      </div>
+      <a href="index.html" class="btn">Volver</a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../home.html">Inicio</a></li>
+        <li><a href="../funcionalidades/guia-estilos.html">Guía de Estilos</a></li>
+        <li><a href="../funcionalidades/citas.html">Lista de Citas</a></li>
+        <li><a href="../funcionalidades/detalle-cita.html">Detalle Cita</a></li>
+        <li><a href="../funcionalidades/historia-clinica.html">Historia Clínica</a></li>
+        <li><a href="../funcionalidades/busqueda-pacientes.html">Búsqueda de Pacientes</a></li>
+        <li><a href="../enfermeria-sass-vite/dist/index.html">Módulo Enfermería</a></li>
+        <li><a href="dist/index.html">Módulo Urgencias</a></li>
+      </ul>
+    </nav>
+    <main class="p-8">
+      <section class="card">
+        <h2 class="text-xl font-semibold mb-4">Formulario de Triaje</h2>
+        <form class="space-y-4">
+          <div>
+            <label for="nombre" class="block font-medium">Nombre del paciente</label>
+            <input type="text" id="nombre" name="nombre" class="form-input" required>
+          </div>
+          <div>
+            <label for="dni" class="block font-medium">DNI</label>
+            <input type="text" id="dni" name="dni" class="form-input" required>
+          </div>
+          <div>
+            <label for="prioridad" class="block font-medium">Prioridad</label>
+            <select id="prioridad" name="prioridad" class="form-select" required>
+              <option value="alta">Alta</option>
+              <option value="media">Media</option>
+              <option value="baja">Baja</option>
+            </select>
+          </div>
+          <div>
+            <label for="sintomas" class="block font-medium">Síntomas</label>
+            <textarea id="sintomas" name="sintomas" class="form-textarea" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn">Registrar Triaje</button>
+        </form>
+      </section>
+    </main>
+    <footer class="text-center p-4 text-gray-500 text-sm">
+      &copy; 2025 Hospital Tecu-ra
+    </footer>
+  </body>
+</html>
