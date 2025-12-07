@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro en Urgencias</title>
+    <link rel="stylesheet" href="./dist/assets/styles-CzPtrUoJ.css">
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/hospital-frontend/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <img class="header-logo" src="../images/logo.svg" alt="Logo">
+        <h1>Registro en Urgencias</h1>
+      </div>
+      <a href="index.html" class="btn">Volver</a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="triaje.html">Triaje</a></li>
+        <li><a href="registro-urgencias.html">Registro Urgencias</a></li>
+        <li><a href="/hospital-frontend/home.html">Volver a la página principal</a></li>
+      </ul>
+    </nav>
+    <main class="p-8">
+      <section class="card">
+        <h2 class="text-xl font-semibold mb-4">Registrar nuevo paciente</h2>
+        <form class="space-y-4">
+          <div>
+            <label for="nombre" class="block font-medium">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="form-input" required>
+          </div>
+          <div>
+            <label for="dni" class="block font-medium">DNI</label>
+            <input type="text" id="dni" name="dni" class="form-input" required>
+          </div>
+          <div>
+            <label for="motivo" class="block font-medium">Motivo de consulta</label>
+            <textarea id="motivo" name="motivo" class="form-textarea" rows="3" required></textarea>
+          </div>
+          <div>
+            <label for="fecha" class="block font-medium">Fecha y hora</label>
+            <input type="datetime-local" id="fecha" name="fecha" class="form-input" required>
+          </div>
+          <button type="submit" class="btn">Registrar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="text-center p-4 text-gray-500 text-sm">
+      &copy; 2025 Hospital Tecu-ra
+    </footer>
+  </body>
+</html>

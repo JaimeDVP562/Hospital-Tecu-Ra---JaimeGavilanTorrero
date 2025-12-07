@@ -1,0 +1,56 @@
+/* Components converted to plain CSS using CSS custom properties */
+section {
+	margin-bottom: 20px;
+	background: var(--color-white);
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+	color: var(--color-secondary);
+}
+
+button, .btn {
+	background-color: var(--color-secondary);
+	color: var(--color-white);
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+button:hover, .btn:hover {
+	background-color: #0056b3;
+}
+.btn { margin: 0.5rem 0; }
+
+.card {
+	background: var(--color-white);
+	border-radius: var(--border-radius);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: var(--spacing);
+	margin-bottom: var(--spacing);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+input, select, textarea {
+	padding: 0.5rem;
+	border: 1px solid var(--color-secondary);
+	border-radius: var(--border-radius);
+	font-size: var(--font-size-base);
+}
+
+input:focus, select:focus, textarea:focus {
+	outline: none;
+	border-color: var(--color-primary);
+}

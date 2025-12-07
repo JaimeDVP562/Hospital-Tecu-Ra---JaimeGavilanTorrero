@@ -1,0 +1,28 @@
+/* Combined stylesheet for the static site
+   This file brings together variables, helpers, layout, components and pages
+   so the HTML files can include a single CSS file: css/styles.css
+*/
+
+@charset "utf-8";
+
+/* Variables */
+@import url('./_variables.css');
+
+/* Mixins helpers as classes */
+@import url('./_mixins.css');
+
+/* Layout */
+@import url('./_layout.css');
+
+/* Components */
+@import url('./_components.css');
+
+/* Page specific */
+@import url('./_pages.css');
+
+/* Additional base styles (normalize + small helpers) */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+.visually-hidden { position: absolute; left: -9999px; }

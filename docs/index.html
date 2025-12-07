@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Hospital Tecu-ra - Login</title>
+    <style>
+        /* Centrar el contenedor de login en la pantalla */
+        html, body { height: 100%; }
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f6f7fb;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+        }
+        .login-container {
+            width: 100%;
+            max-width: 420px;
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(16,24,40,0.08);
+            text-align: center;
+        }
+        .login-logo { width: 180px; max-width: 60%; height: auto; margin: 0 auto 1.25rem; display:block }
+        .form-group { text-align: left; margin-bottom: 1rem; }
+        label { display:block; margin-bottom: 0.25rem; font-weight:600; }
+        input { width:100%; padding:0.5rem; border:1px solid #d1d5db; border-radius:6px }
+        .btn { display:inline-block; padding:0.6rem 1.1rem; background:#0066cc; color:#fff; border-radius:8px; text-decoration:none }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="images/logo.svg" alt="Logo Hospital Tecu-ra" class="login-logo">
+        <h1>Iniciar Sesión</h1>
+        <form action="./home.html" method="post">
+            <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña" required>
+            </div>
+            <a href="home.html" class="btn" >Iniciar Sesión</a>
+        </form>
+    </div>
+</body>
+</html>

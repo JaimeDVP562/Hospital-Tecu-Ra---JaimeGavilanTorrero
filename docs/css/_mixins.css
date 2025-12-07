@@ -1,0 +1,28 @@
+/* Helper classes replacing SASS mixins */
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-mixin {
+	border: none;
+	padding: 0.5rem 1.2rem;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	font-size: var(--font-size-base);
+	transition: background 0.2s;
+	display: inline-block;
+}
+
+/* Responsive helper classes (optional usage)
+	 Use .respond-sm, .respond-md, .respond-lg with CSS where needed */
+@media (max-width: 600px) {
+	.respond-sm { display: block; }
+}
+@media (max-width: 900px) {
+	.respond-md { display: block; }
+}
+@media (max-width: 1200px) {
+	.respond-lg { display: block; }
+}

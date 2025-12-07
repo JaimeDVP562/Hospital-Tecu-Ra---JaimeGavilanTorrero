@@ -1,0 +1,89 @@
+/* Layout styles converted to plain CSS using CSS variables and helper classes */
+body {
+	font-family: var(--font-main);
+	margin: 0;
+	padding: 0;
+	background-color: var(--color-bg);
+	color: var(--color-text);
+}
+
+header {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	padding: 5px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+header img {
+	height: 80px;
+}
+
+header .header-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header a.btn {
+	margin-left: auto;
+	background-color: var(--color-accent);
+	color: var(--color-white);
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	justify-content: end;
+}
+
+nav {
+	background-color: var(--color-footer);
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav li {
+	margin: 0 15px;
+}
+
+nav a {
+	color: var(--color-white);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+main {
+	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* utility: center header contents */
+header.center { display:flex; align-items:center; justify-content:center; }
+
+footer {
+	background-color: var(--color-footer);
+	color: var(--color-white);
+	text-align: center;
+	padding: 0.5rem;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
