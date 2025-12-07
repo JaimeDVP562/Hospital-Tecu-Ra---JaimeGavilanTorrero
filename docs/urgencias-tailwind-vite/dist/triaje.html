@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Triaje en Urgencias</title>
-    <link rel="stylesheet" href="/hospital-frontend/css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" crossorigin href="./assets/styles-CzPtrUoJ.css">
+    <title>Triaje en Urgencias</title>
   </head>
   <body>
     <header class="site-header">
       <div class="header-content">
-        <img class="header-logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPCEtLSBNZWRpY2FsIENyb3NzIC0tPg0KICA8cmVjdCB4PSIxMCIgeT0iMzAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzAwN2JmZiIvPg0KICA8cmVjdCB4PSIwIiB5PSI0MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMDA3YmZmIi8+DQogIA0KICA8IS0tIEhvc3BpdGFsIE5hbWUgLS0+DQogIDx0ZXh0IHg9IjYwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzMzMyI+VGVjdS1yYTwvdGV4dD4NCiAgDQogIDwhLS0gU3VidGl0bGUgLS0+DQogIDx0ZXh0IHg9IjYwIiB5PSI3MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjY2Ij5Ib3NwaXRhbDwvdGV4dD4NCjwvc3ZnPg==" alt="Logo">
+        <img class="header-logo"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPCEtLSBNZWRpY2FsIENyb3NzIC0tPg0KICA8cmVjdCB4PSIxMCIgeT0iMzAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzAwN2JmZiIvPg0KICA8cmVjdCB4PSIwIiB5PSI0MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMDA3YmZmIi8+DQogIA0KICA8IS0tIEhvc3BpdGFsIE5hbWUgLS0+DQogIDx0ZXh0IHg9IjYwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzMzMyI+VGVjdS1yYTwvdGV4dD4NCiAgDQogIDwhLS0gU3VidGl0bGUgLS0+DQogIDx0ZXh0IHg9IjYwIiB5PSI3MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjY2Ij5Ib3NwaXRhbDwvdGV4dD4NCjwvc3ZnPg=="
+          alt="Logo">
         <h1>Triaje en Urgencias</h1>
       </div>
       <a href="index.html" class="btn">Volver</a>
@@ -19,7 +21,7 @@
       <ul>
         <li><a href="triaje.html">Triaje</a></li>
         <li><a href="registro-urgencias.html">Registro Urgencias</a></li>
-        <li><a href="/hospital-frontend/home.html">Volver a la página principal</a></li>
+        <li><a href="../../home.html">Volver a la página principal</a></li>
       </ul>
     </nav>
     <main class="p-8">
@@ -27,8 +29,10 @@
         <h2 class="text-xl font-semibold mb-4">Formulario de Triaje</h2>
         <form class="space-y-4">
           <div>
-            <label for="nombre" class="block font-medium">Nombre del paciente</label>
-            <input type="text" id="nombre" name="nombre" class="form-input" required>
+            <label for="nombre" class="block font-medium">Nombre del
+              paciente</label>
+            <input type="text" id="nombre" name="nombre" class="form-input"
+              required>
           </div>
           <div>
             <label for="dni" class="block font-medium">DNI</label>
@@ -36,7 +40,8 @@
           </div>
           <div>
             <label for="prioridad" class="block font-medium">Prioridad</label>
-            <select id="prioridad" name="prioridad" class="form-select" required>
+            <select id="prioridad" name="prioridad" class="form-select"
+              required>
               <option value="alta">Alta</option>
               <option value="media">Media</option>
               <option value="baja">Baja</option>
@@ -44,7 +49,8 @@
           </div>
           <div>
             <label for="sintomas" class="block font-medium">Síntomas</label>
-            <textarea id="sintomas" name="sintomas" class="form-textarea" rows="3" required></textarea>
+            <textarea id="sintomas" name="sintomas" class="form-textarea"
+              rows="3" required></textarea>
           </div>
           <button type="submit" class="btn">Registrar Triaje</button>
         </form>
