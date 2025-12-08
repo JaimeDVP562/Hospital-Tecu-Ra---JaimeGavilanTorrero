@@ -2,11 +2,11 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
-  base: '/Hospital-Tecu-Ra---JaimeGavilanTorrero',
+  base: './',
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),             // página principal del módulo
+        main: resolve(__dirname, 'index.html'),
         registro: resolve(__dirname, 'registro-urgencias.html'),
         triaje: resolve(__dirname, 'triaje.html'),
       },
