@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Tecu-ra - Detalle de Cita</title>
+
+    <!-- Ruta correcta desde /docs/funcionalidades/ -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-        <header>
 
-            <div class="header-content">
-                <img src="../images/logo.svg" alt="Logo Hospital Tecu-ra">
-                <h1>Bienvenido al Hospital Tecu-ra</h1>
-            </div>
-            <a href="../index.html" class="btn">Salir</a>
-        </header>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="../images/logo.svg" alt="Logo Hospital Tecu-ra">
+            <h1>Detalle de la Cita</h1>
+        </div>
+
+        <a href="../index.html" class="btn">Salir</a>
+    </header>
+
     <nav>
         <ul>
             <li><a href="../home.html">Inicio</a></li>
@@ -27,29 +31,39 @@
             <li><a href="../urgencias-tailwind-vite/dist/index.html">Módulo Urgencias</a></li>
         </ul>
     </nav>
+
     <main>
         <section>
             <h2>Información de la Cita</h2>
+
             <p><strong>ID Cita:</strong> 001</p>
             <p><strong>Paciente:</strong> Juan Pérez</p>
             <p><strong>Fecha:</strong> 2025-11-20</p>
             <p><strong>Hora:</strong> 10:00</p>
             <p><strong>Médico:</strong> Dr. García</p>
             <p><strong>Síntomas:</strong> Dolor de cabeza persistente</p>
+
+            <a href="citas.html" class="btn" style="margin-top: 1rem;">Volver a Citas</a>
         </section>
+
         <section>
             <h2>Registro de Prescripción</h2>
+
             <form>
-                <label for="medicamento">Medicamento:</label><br>
-                <input type="text" id="medicamento" name="medicamento"><br><br>
-                <label for="dosis">Dosis:</label><br>
-                <input type="text" id="dosis" name="dosis"><br><br>
-                <label for="instrucciones">Instrucciones:</label><br>
-                <textarea id="instrucciones" name="instrucciones"></textarea><br><br>
-                <button type="submit">Guardar Prescripción</button>
+                <label for="medicamento">Medicamento:</label>
+                <input type="text" id="medicamento" name="medicamento">
+
+                <label for="dosis">Dosis:</label>
+                <input type="text" id="dosis" name="dosis">
+
+                <label for="instrucciones">Instrucciones:</label>
+                <textarea id="instrucciones" name="instrucciones"></textarea>
+
+                <button type="submit" class="btn" style="margin-top: 1rem;">Guardar Prescripción</button>
             </form>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Hospital Tecu-ra. Todos los derechos reservados.</p>
     </footer>
