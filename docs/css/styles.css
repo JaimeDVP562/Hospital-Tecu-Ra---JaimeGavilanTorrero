@@ -6,19 +6,19 @@
 @charset "utf-8";
 
 /* Variables */
-@import url('./_variables.css');
+@import url('./variables.css');
 
 /* Mixins helpers as classes */
-@import url('./_mixins.css');
+@import url('./mixins.css');
 
 /* Layout */
-@import url('./_layout.css');
+@import url('./layout.css');
 
 /* Components */
-@import url('./_components.css');
+@import url('./components.css');
 
 /* Page specific */
-@import url('./_pages.css');
+@import url('./pages.css');
 
 /* Additional base styles (normalize + small helpers) */
 * { box-sizing: border-box; }
